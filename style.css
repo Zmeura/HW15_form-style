@@ -4,8 +4,7 @@
   padding: 0;
 }
 
-html,
-body {
+html {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -13,6 +12,15 @@ body {
   line-height: 22px;
   color: #545454;
   margin: 20px;
+  background: #e5e5e5;
+}
+
+body {
+  background: #ffffff;
+  width: 570px;
+  margin: 0 auto;
+  border-radius: 6px;
+  padding: 35px 34px 16px 36px;
 }
 
 h1 {
@@ -24,11 +32,10 @@ h1 {
 }
 
 main {
-  width: 570px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #ffffff;
 }
 
 .form__section {
@@ -110,7 +117,7 @@ select:focus-visible,
 }
 
 .form__section-radio input:checked ~ span {
-  border: 7px solid #007bff;
+  border: 6px solid #007bff;
 }
 
 .select {
@@ -198,13 +205,14 @@ select::-ms-expand {
 
 .form__btn-back {
   width: 100px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .form__btn-upd {
   width: 150px;
   cursor: pointer;
   color: #ffffff;
+  margin-bottom: 89px;
 }
 
 .form__section-photo {
