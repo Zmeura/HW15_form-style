@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HW_15</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <h1>Create an Account</h1>
+        <div class="form__section">
+          <div class="form__section-column">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" required />
+          </div>
+
+          <div class="form__section-column">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" required />
+          </div>
+        </div>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required class="form__input-email" />
+        <p class="form__text">We'll never share your email with anyone else.</p>
+
+        <div class="form__section-radio">
+          <label for="male"
+            >Male<input type="radio" name="gender" id="male" /><span></span
+          ></label>
+
+          <label for="female"
+            >Female<input type="radio" name="gender" id="female" /><span></span
+          ></label>
+        </div>
+
+        <div class="form__section">
+          <div class="form__section-column">
+            <label for="country">Country</label>
+            <select name="country" class="select" id="country">
+              <option value="" class="select">Select</option>
+              <option value="ukr">Ukraine</option>
+              <option value="md">Moldova</option>
+              <option value="pol">Poland</option>
+            </select>
+          </div>
+
+          <div class="form__section-column">
+            <label for="city">City</label>
+            <input type="text" id="city" />
+          </div>
+        </div>
+
+        <button class="form__btn form__btn-submit">
+          <a href="profile.html">Sign Up</a>
+        </button>
+
+        <p class="form__text form__text-center">
+          By clicking the 'Sign Up' button, you confirm that you accept our
+        </p>
+        <p class="form__text form__text-center">
+          <a href="#" class="form__link">Terms of Use</a> and
+          <a href="#" class="form__link">Privacy Policy</a>
+        </p>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p>Have an account?</p>
+      <a class="footer__link" href="#">Log In</a>
+    </footer>
+  </body>
+</html>

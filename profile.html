@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <div class="form__element">
+          <h1>Profile</h1>
+          <button class="form__btn form__btn-back">
+            <a href="index.html">Back</a>
+          </button>
+        </div>
+        <div class="form__section form__section-photo">
+          <img class="form__photo" src="./img/Image.png" alt="photo" />
+
+          <div class="form__section-column avatar">
+            <input class="type" type="file" id="avatar" />
+            <label for="avatar">
+              <div class="avatar__fild"></div>
+            </label>
+            <p class="form__text">Up to 1 MB (300x300 px)</p>
+          </div>
+
+          <button type="reset" class="btn-reset">
+            <img src="./img/Icon-Color.svg" alt="" />
+          </button>
+        </div>
+        <div class="form__section">
+          <div class="form__section-column">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="form__section-column">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" />
+          </div>
+        </div>
+
+        <div class="form__section">
+          <div class="form__section-column">
+            <label for="country">Country</label>
+            <select name="country" class="select" id="country">
+              <option value="" placeholder="Select"></option>
+              <option value="ukr">Ukraine</option>
+              <option value="md">Moldova</option>
+              <option value="pol">Poland</option>
+            </select>
+          </div>
+
+          <div class="form__section-column">
+            <label for="city">City</label>
+            <input type="text" id="city" />
+          </div>
+        </div>
+
+        <div class="form__section">
+          <div class="form__section-column">
+            <label for="zip-code">Zip Code</label>
+            <input type="number" id="zip-code" required />
+          </div>
+
+          <div class="form__section-column">
+            <label for="tel">Phone Number</label>
+            <input type="tel" id="tel" />
+          </div>
+        </div>
+
+        <button class="form__btn form__btn-upd">
+          <a href="thank-U.html">Update</a>
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
